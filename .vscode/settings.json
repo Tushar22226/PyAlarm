@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "CIRCLE.C": "cpp",
+        "CQUEUE.C": "cpp",
+        "QUEUE.C": "cpp",
+        "DEQUE.C": "cpp",
+        "DQUEUE.C": "cpp",
+        "POSTFIX1.C": "cpp",
+        "SIMQUEUE.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

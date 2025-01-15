@@ -14,11 +14,11 @@ def get_alarm_time():
                 alarm_datetime += datetime.timedelta(days=1)
             return alarm_datetime
         except ValueError:
-            print("Invalid format. Please enter time in HH:MM format.")
+            print("Invalid format  Please enterr time in HH:MM format.")
 
 def play_alarm_sound():
     pygame.mixer.init()
-    sound_file_path = '/home/tushar/Downloads/notification216.mp3'
+    sound_file_path = '/home/tushar/Downloads/notification2.mp3'
     try:
         sound = pygame.mixer.Sound(sound_file_path)
         sound.play(-1)  
@@ -50,7 +50,6 @@ def show_remaining_time(alarm_time):
             print("Alarm time reached!")
             sound = play_alarm_sound()
             if sound:
-                # Start a separate thread to handle stop/snooze input while the alarm plays
                 input_thread = threading.Thread(target=stop_or_snooze_alarm, args=(sound,))
                 input_thread.start()
                 input_thread.join()
